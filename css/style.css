@@ -58,7 +58,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #000000;
-	min-width: 70.95%;
+	min-width: 1200px;
 	padding-top: 0.5px;
 	z-index: 1;
 }
@@ -153,7 +153,8 @@ body {
 	display: flex;
 	flex-direction: row;
   justify-content: space-between; 
-  /* width: 100%; */
+  width: 100%;
+  
 }
 
 .pic {
@@ -219,11 +220,13 @@ body {
 	flex-direction: row;
 	margin: 60px auto 0;
 	width: 70.95%;
+  min-width: 1200px;
 }
 
 .body {
 	display: flex;
 	flex-direction: column;
+  width: 75%;
 }
 
 .main {
@@ -358,7 +361,7 @@ a {
 
 .aside {
 	margin-left: 127.5px;
-	width: 270px;
+	width: 25%;
 	display: flex;
 	flex-direction: column;
 }
@@ -595,6 +598,14 @@ a {
 	margin-right: 23px;
 }
 
+/* .img-shop{
+  width: calc(100% * 1);
+} */
+
+.shop-card {
+  width: calc(100% / 3);
+}
+
 .heading-shop {
 	margin-top: 0;
 	cursor: pointer;
@@ -719,3 +730,5 @@ a {
 	font-size: 12px;
 	color: #9b9b9b;
 }
+
+@media (min-width: 1660px) and
