@@ -154,8 +154,19 @@ body {
 	flex-direction: row;
   justify-content: space-between; 
   width: 100%;
+  align-items: flex-end;
+  flex-grow: 1;
   
 }
+
+/* .conteiner-list{
+  display: flex;
+  align-items: flex-end;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	list-style-type: none;
+	font-family: inherit;
+} */
 
 .pic {
 	width: 25%;
@@ -194,10 +205,9 @@ body {
 	font-size: 20px;
 }
 
-.border-two {
-	margin-bottom: 5%;
+ .border-two {
 	margin-top: 32.5%;
-}
+} 
 
 .one {
 	background-image: url(../images/trend1.jpg);
