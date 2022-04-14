@@ -1,3 +1,45 @@
+@font-face {
+	font-family: 'Open Sans-bold';
+	src: url("../fonts/OpenSans-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans-bold';
+	src: url("../fonts/OpenSans-Bold.woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans-bold';
+	src: url("../fonts/OpenSans-Bold.woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans-regular';
+	src: url("../fonts/OpenSans-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans-regular';
+	src: url("../fonts/OpenSans-Regular.woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans-regular';
+	src: url("../fonts/OpenSans-Regular.woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,43 +47,31 @@
 	/* outline: 1px solid red; */
 }
 
-@font-face {
-	font-family: 'OpenSans';
-	src: url("../fonts/OpenSans-Regular.woff");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'OpenSans';
-	src: url("../fonts/OpenSans-Bold.woff");
-	font-weight: 700;
-	font-style: normal;
-}
-
 body {
-	font-family: OpenSans, Arial, sans-serif;
+	font-family: 'OpenSans', Arial, sans-serif;
 }
 
 a {
 	text-decoration: none;
 }
 
-select, textarea, input {
+select,
+textarea,
+input {
 	font-family: inherit;
 }
 
-/* --------- popup --------- */
+
+/* --------- Попап --------- */
+
 .popup {
 	position: fixed;
 	display: none;
-	
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-  	z-index: 50;
-
+	z-index: 50;
 	background-color: rgba(0, 0, 0, .6);
 }
 
@@ -61,28 +91,23 @@ select, textarea, input {
 	margin-left: auto;
 	margin-bottom: 10px;
 	border: none;
-
 	background-image: url("../svg/form-x.svg");
 	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
 	cursor: pointer;
 }
 
 .popup-feedback {
 	width: 100%;
 	padding: 50px 30px;
-
 	background-color: #ffffff;
-
 	font-size: 0;
 }
 
 .popup-title {
 	margin-bottom: 25px;
-	
 	font-size: 20px;
 	font-weight: 700;
 	color: #000000;
@@ -96,13 +121,12 @@ select, textarea, input {
 	width: 66px;
 	height: 3px;
 	margin: 7px auto 0;
-
 	background-color: #b59f5b;
 	opacity: 0.4;
 }
 
 .popup-form-row {
-  	margin-bottom: 28px;
+	margin-bottom: 28px;
 }
 
 .popup-form-row:last-child {
@@ -112,10 +136,8 @@ select, textarea, input {
 .popup-form-hint {
 	display: block;
 	margin-bottom: 8px;
-	
 	font-size: 13px;
 	font-weight: 400;
-
 	cursor: default;
 }
 
@@ -124,17 +146,13 @@ select, textarea, input {
 	width: 100%;
 	height: 48px;
 	padding-left: 19px;
-	
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: none;
-	
 	font-size: 13px;
 	font-weight: 400;
 	color: rgba(0, 0, 0, .54);
-	
 	cursor: pointer;
-
 	background-color: #f3f7f5;
 	background-image: url("../svg/form-arrows.svg");
 	background-repeat: no-repeat;
@@ -144,7 +162,6 @@ select, textarea, input {
 
 .popup-radio-group {
 	display: inline-block;
-
 	cursor: pointer;
 }
 
@@ -158,10 +175,8 @@ select, textarea, input {
 	display: inline-block;
 	vertical-align: bottom;
 	margin-right: 5px;
-	
 	width: 18px;
 	height: 18px;
-
 	background-image: url("../svg/form-empty-circle.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -172,15 +187,15 @@ select, textarea, input {
 	margin-left: 17px;
 }
 
-.radio:checked ~ .popup-radio-group-text::before {
+.radio:checked~.popup-radio-group-text::before {
 	background-image: url("../svg/form-circle.svg");
 }
 
 .radio {
 	position: absolute;
 	clip: rect(1px, 1px, 1px, 1px);
-	height: 1px; 
-	width: 1px; 
+	height: 1px;
+	width: 1px;
 }
 
 .popup-text-field {
@@ -188,50 +203,44 @@ select, textarea, input {
 	height: 132px;
 	resize: none;
 	padding: 15px 20px;
-
 	border: none;
-
 	background-color: #f3f7f5;
 }
 
-/*-----шапка сайта-------*/
+
+/*-----Шапка-------*/
+
 .header {
 	width: 100%;
 	color: #ffffff;
 	padding-top: 30px;
 	padding-bottom: 128px;
-
 	background-image: url("../images/banner-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-color: #000000;
-
-  	position: relative;
+	position: relative;
 }
 
 .header::after {
 	content: "";
-	background-color:#000000;
-
+	background-color: #000000;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-
 	z-index: 5;
-  	opacity: 0.6;
+	opacity: 0.6;
 }
 
 .container {
 	max-width: 1200px;
 	padding: 0 15px;
-
 	margin: 0 auto;
-
 	position: relative;
-  	z-index: 10;
+	z-index: 10;
 }
 
 .header-container {
@@ -241,7 +250,8 @@ select, textarea, input {
 	justify-content: space-between;
 }
 
-.logo, .logo-image {
+.logo,
+.logo-image {
 	display: block;
 }
 
@@ -255,7 +265,6 @@ select, textarea, input {
 	padding-left: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -270,7 +279,6 @@ select, textarea, input {
 
 .menu-link {
 	display: block;
-
 	font-size: 13px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -283,23 +291,22 @@ select, textarea, input {
 .title {
 	max-width: 690px;
 	margin: 103px auto 0;
-
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 1.65;
-
 	text-transform: uppercase;
 	text-align: center;
 }
 
-/* ----------- блок с трендами ----------- */
+
+/* ----------- Тренды ----------- */
+
 .trends {
-    width: 100%;
+	width: 100%;
 }
 
 .trends-title {
 	margin: 55px 0 30px;
-
 	color: #0f0d0e;
 	font-size: 20px;
 	font-weight: 700;
@@ -313,109 +320,100 @@ select, textarea, input {
 	width: 66px;
 	height: 3px;
 	margin: 10px auto 0;
-
 	background-color: #b59f5b;
 	opacity: 0.4;
 }
 
 .trends-posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .trend-post-1 {
-    background-image: url("../images/trend1.jpg");
+	background-image: url("../images/trend1.jpg");
 }
 
 .trend-post-2 {
-    background-image: url("../images/trend2.jpg")
+	background-image: url("../images/trend2.jpg")
 }
 
 .trend-post-3 {
-    background-image: url("../images/trend3.jpg")
+	background-image: url("../images/trend3.jpg")
 }
 
 .trend-post-4 {
-    background-image: url("../images/trend4.jpg")
+	background-image: url("../images/trend4.jpg")
 }
 
 .trend-post {
 	min-height: 320px;
 	width: calc(25% - 5px);
-    padding: 15px 20px;
-    display: flex;
-    align-items: flex-end;
-
-    background-repeat: no-repeat;
+	padding: 15px 20px;
+	display: flex;
+	align-items: flex-end;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-color: #000000;
-
-  	position: relative;
+	position: relative;
 }
 
-.trend-post:nth-child(n + 5) {
+.trend-post:nth-child(n+5) {
 	margin-top: 5px;
 }
 
 .trend-post::before {
 	content: "";
-	background-color:#000000;
-
+	background-color: #000000;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-
 	z-index: 5;
-  	opacity: 0.6;
+	opacity: 0.6;
 }
 
 .trend-post-content {
 	width: 100%;
-    border: 3px solid rgba(181, 159, 91, .6);
-    padding: 35px;
-
-    position: relative;
-    z-index: 10;
+	border: 3px solid rgba(181, 159, 91, .6);
+	padding: 35px;
+	position: relative;
+	z-index: 10;
 }
 
 .trend-post-title {
-    margin-top: 7px;
-
+	margin-top: 7px;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 1.2;
-
 	text-transform: uppercase;
 }
 
 .trend-post-link {
-    color: #ffffff;
+	color: #ffffff;
 }
 
-/*-----основной контент страницы*/
+
+/*-----Контент-------*/
+
 .page {
 	max-width: 1200px;
 	padding: 60px 15px 0;
-
 	margin: 0 auto;
-
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
 }
 
 .content {
-    max-width: 780px;
+	max-width: 780px;
 }
 
 .content-post {
 	display: flex;
 	align-items: flex-start;
-
 	margin-bottom: 61px;
 }
 
@@ -433,7 +431,6 @@ select, textarea, input {
 	padding-left: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -448,7 +445,6 @@ select, textarea, input {
 
 .tag {
 	display: block;
-
 	color: #b59f5b;
 	font-size: 14px;
 	font-weight: 700;
@@ -462,26 +458,25 @@ select, textarea, input {
 .content-post-title {
 	margin-top: 5px;
 	margin-bottom: 27px;
-
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-transform: uppercase;
 }
 
-.content-post-link:hover, .sidebar-element-link:hover, .trend-post-link:hover {
+.content-post-link:hover,
+.sidebar-element-link:hover,
+.trend-post-link:hover {
 	color: #b59f5b;
 }
 
 .content-post-link {
 	display: block;
-
 	color: #0f0d0e;
 }
 
 .content-post-date {
 	margin-right: 10px;
-
 	color: #888888;
 	font-size: 12px;
 }
@@ -494,19 +489,19 @@ select, textarea, input {
 
 .content-post-footnote {
 	margin-bottom: 47px;
-
 	font-size: 0;
 }
 
 .content-post-text {
 	margin-bottom: 12px;
-
 	color: #0f0d0e;
 	font-size: 15px;
 	line-height: 1.4;
 }
 
-/*-------боковая колонка страницы------*/
+
+/*-------aside------*/
+
 .sidebar {
 	width: 270px;
 	flex-shrink: 0;
@@ -522,7 +517,6 @@ select, textarea, input {
 
 .sidebar-title {
 	margin-bottom: 22px;
-
 	color: #0f0d0e;
 	font-size: 14px;
 	font-weight: 700;
@@ -536,7 +530,6 @@ select, textarea, input {
 	width: 67px;
 	height: 4px;
 	margin: 10px auto 0;
-
 	background-color: #b59f5b;
 	opacity: 0.4;
 }
@@ -544,7 +537,6 @@ select, textarea, input {
 .sidebar-element {
 	display: flex;
 	align-items: flex-start;
-
 	margin-bottom: 20px;
 }
 
@@ -560,7 +552,6 @@ select, textarea, input {
 .post-date {
 	display: block;
 	margin-bottom: 3px;
-
 	font-size: 12px;
 	color: #000000;
 	opacity: 0.54;
@@ -575,7 +566,6 @@ select, textarea, input {
 
 .sidebar-element-link {
 	display: block;
-
 	color: #000;
 }
 
@@ -583,7 +573,10 @@ select, textarea, input {
 	font-size: 0;
 }
 
-.search-hint, .subscribe-hint, .popup-close-hint, .menu-burger-hint {
+.search-hint,
+.subscribe-hint,
+.popup-close-hint,
+.menu-burger-hint {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -600,7 +593,6 @@ select, textarea, input {
 	padding: 15px;
 	border: none;
 	outline: none;
-  
 	background-color: #f3f7f5;
 }
 
@@ -609,17 +601,17 @@ select, textarea, input {
 	height: 50px;
 	border: none;
 	vertical-align: top;
-
 	background-color: #b59f5b;
 	background-image: url("../svg/search.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px 20px;
-
 	cursor: pointer;
 }
 
-.button-search:hover, .button:hover, .button-shop:hover {
+.button-search:hover,
+.button:hover,
+.button-shop:hover {
 	background-color: #323232;
 }
 
@@ -630,11 +622,12 @@ select, textarea, input {
 	padding: 15px;
 	border: none;
 	outline: none;
-  
 	background-color: #f3f7f5;
 }
 
-.field::placeholder, .field-subscribe::placeholder, .popup-text-field::placeholder {
+.field::placeholder,
+.field-subscribe::placeholder,
+.popup-text-field::placeholder {
 	font-size: 13px;
 	color: #000000;
 	opacity: 0.54;
@@ -646,7 +639,9 @@ select, textarea, input {
 	border: 1px solid #b59f5b;
 }
 
-.field-subscribe:focus, .select:focus, .popup-text-field:focus {
+.field-subscribe:focus,
+.select:focus,
+.popup-text-field:focus {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	outline: 1px solid #b59f5b;
@@ -656,11 +651,8 @@ select, textarea, input {
 	width: 100%;
 	border: none;
 	padding: 15px;
-
 	cursor: pointer;
-
 	background-color: #b59f5b;
-
 	font-size: 14px;
 	color: #ffffff;
 	font-weight: 700;
@@ -672,7 +664,6 @@ select, textarea, input {
 	padding-left: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-
 	display: flex;
 	align-content: flex-start;
 	justify-content: flex-start;
@@ -683,11 +674,9 @@ select, textarea, input {
 	padding: 3px 12px;
 	margin-right: 7px;
 	margin-bottom: 6px;
-
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-
 	border: 3px solid #eeeeee;
 }
 
@@ -708,14 +697,13 @@ select, textarea, input {
 
 .sidebar-categorie {
 	padding: 8px 0 10px 0;
-
 	border-bottom: 2px solid #ededed;
-
 	font-size: 14px;
 	font-weight: 700;
 }
 
-.categorie-link, .good-card-link {
+.categorie-link,
+.good-card-link {
 	color: #000000;
 }
 
@@ -727,20 +715,20 @@ select, textarea, input {
 	font-size: 12px;
 	font-weight: 700;
 	color: #b59f5b;
-
 	vertical-align: super;
 }
 
-/* ------------ секция с магазином ---------- */
+
+/* ------------ Магазин ---------- */
+
 .page-footnote {
 	max-width: 1200px;
 	padding: 0 15px 60px;
-
 	margin: 0 auto;
 }
 
 .shop {
-    width: 100%;
+	width: 100%;
 }
 
 .shop-title {
@@ -757,58 +745,54 @@ select, textarea, input {
 	width: 66px;
 	height: 3px;
 	margin: 10px auto 0;
-
 	background-color: #b59f5b;
 	opacity: 0.4;
 }
 
-.shop-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.good-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-.shop-card {
-    width: calc(100%/3 - 44px);
+.good-card {
+	width: calc(100%/3 - 44px);
 	margin-top: 22px;
-
 	display: flex;
 	flex-direction: column;
 }
 
-.shop-card-image {
+.good-card-image {
 	width: 100%;
 	padding: 0 20px;
 	margin-bottom: -35px;
 }
 
-.shop-card-info {
+.good-card-info {
 	padding: 45px 20px 25px 20px;
 	flex-grow: 1;
-
 	border: 3px solid rgba(181, 159, 91, .6);
 }
 
-.shop-card-title {
+.good-card-title {
 	color: #0f0d0e;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.shop-card-text {
+.good-card-text {
 	margin-top: 5px;
-
 	font-size: 15px;
 	line-height: 1.46;
 	font-weight: 400;
 }
 
-.shop-card-link {
+.good-card-link {
 	color: #b59f5b;
 }
 
-.shop-card-link:hover {
+.good-card-link:hover {
 	text-decoration: underline;
 }
 
@@ -816,7 +800,6 @@ select, textarea, input {
 	display: flex;
 	justify-content: space-between;
 	flex-grow: 1;
-
 	margin-top: 20px;
 }
 
@@ -825,7 +808,6 @@ select, textarea, input {
 	padding-left: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-
 	align-self: flex-end;
 }
 
@@ -846,9 +828,7 @@ select, textarea, input {
 .button-shop {
 	border: none;
 	padding: 15px 29px;
-
 	cursor: pointer;
-
 	background-color: #b59f5b;
 	font-size: 14px;
 	color: #ffffff;
@@ -856,18 +836,18 @@ select, textarea, input {
 	text-transform: uppercase;
 }
 
-/* ------------ подвал страницы ------------- */
+
+/* ------------ Подвал ------------- */
+
 .footer {
 	width: 100%;
 	margin-top: 68px;
-
 	text-align: center;
 }
 
 .socials {
 	padding: 29px 25px;
 	margin-bottom: 70px;
-
 	background-color: #f3f7f5;
 }
 
@@ -876,7 +856,7 @@ select, textarea, input {
 	padding-left: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-	line-height:0;
+	line-height: 0;
 	font-size: 0;
 }
 
@@ -893,38 +873,37 @@ select, textarea, input {
 	display: block;
 	width: 25px;
 	height: 25px;
-
 	background-repeat: no-repeat;
 	background-size: 20px;
 	background-position: center;
 }
 
 .link-twitter {
-	background-image:url("../svg/004-twitter.svg");
+	background-image: url("../svg/004-twitter.svg");
 	background-size: cover;
 }
 
 .link-printerest {
-	background-image:url("../svg/001-pinterest.svg");
+	background-image: url("../svg/001-pinterest.svg");
 }
 
 .link-facebook {
-	background-image:url("../svg/002-facebook-logo.svg");
+	background-image: url("../svg/002-facebook-logo.svg");
 }
 
 .link-instagram {
-	background-image:url("../svg/005-instagram.svg");
+	background-image: url("../svg/005-instagram.svg");
 }
 
 .link-tumblr {
-	background-image:url("../svg/003-tumblr.svg");
+	background-image: url("../svg/003-tumblr.svg");
 }
 
 .socials-link-text {
 	position: absolute;
 	width: 1px;
 	height: 1px;
-	clip: rect(1px,1px,1px,1px);
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 .copyright {
@@ -940,421 +919,334 @@ select, textarea, input {
 	.menu-burger {
 		display: none;
 	}
-
 	.logo-image-mobile {
 		display: none;
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1023px) and (orientation: portrait), (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+@media (min-width: 641px) and (max-width: 1023px) and (orientation: portrait),
+(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
 	.trend-post {
 		min-height: 247px;
 		width: calc(50% - 3px);
 	}
-	
-	.trend-post:nth-child(n + 3) {
+	.trend-post:nth-child(n+3) {
 		margin-top: 5px;
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1199px), (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-	/* ------ popup -------- */
+@media (min-width: 641px) and (max-width: 1199px),
+(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+	/* ------ Попап -------- */
 	.popup-title {
 		font-size: 18px;
 	}
-	
 	.popup-close-button {
 		width: 30px;
 		height: 30px;
 		margin-bottom: 10px;
 	}
-
 	.popup-form-row {
 		margin-bottom: 30px;
-  }
-
+	}
 	.popup-radio-group-text::before {
 		width: 25px;
 		height: 25px;
 		vertical-align: middle;
 	}
-	
 	.popup-radio-group:nth-of-type(n+2) {
 		margin-left: 35px;
 	}
-
-	/* ------- шапка -------- */
+	/* ------- Шапка -------- */
 	.header {
 		padding-top: 45px;
 		padding-bottom: 110px;
-
 		background-image: url("../images/banner-bg-tablet.jpg");
 	}
-	
 	.container {
 		max-width: 1199px;
 		padding: 0 35px;
 	}
-	
 	.logo-image {
 		width: 157px;
 		min-width: 157px;
 	}
-
 	.logo-image-mobile {
 		display: none;
 	}
-
 	.menu {
 		display: none;
 	}
-	
 	.menu-burger {
 		width: 23px;
 		height: 20px;
 		border: none;
-
 		background-image: url("");
 		background-color: transparent;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-	    color: #ffffff;
 		cursor: pointer;
 	}
-	
 	.title {
 		max-width: 620px;
 		margin: 92px auto 0;
-
 		font-size: 40px;
 		line-height: 1.4;
 	}
-
-	/* ------- тренды -------- */
+	/* ------- Тренды -------- */
 	.trends-title {
 		margin: 45px 0 15px;
-	
 		font-size: 18px;
 	}
-	
 	.trend-post-content {
 		padding: 30px;
 	}
-		
 	.trend-post-title {
 		font-size: 17px;
-		line-height: 1.3;;
+		line-height: 1.3;
+		;
 	}
-
-	/* ------- основной контент -------- */
+	/* ------- Контент -------- */
 	.page {
 		max-width: 1199px;
 		padding: 45px 33px 0;
 	}
-	
 	.content {
 		width: 100%;
 		margin-right: 35px;
 	}
-	
 	.content-post {
 		flex-wrap: wrap;
 		margin-bottom: 40px;
-	
 		border-bottom: 3px solid #eeeeee;
 	}
-	
 	.content-post:last-child {
 		border-bottom: none;
 	}
-	
 	.content-post-image {
 		min-width: 0%;
 		width: 100%;
 		margin-bottom: 10px;
 	}
-	
 	.content-post-info {
 		width: 100%;
 		margin-left: 0;
 	}
-	
 	.content-post-title {
 		margin-top: 10px;
 		margin-bottom: 30px;
-
 		font-size: 17px;
 		line-height: 1.3;
 	}
-
 	.content-post-footnote {
 		margin-bottom: 30px;
 	}
-
 	.content-post-text {
 		margin-bottom: 15px;
 	}
-
-	/* -------- магазин ------- */
+	/* -------- Магазин ------- */
 	.page-footnote {
 		max-width: 1199px;
 		padding: 8px 33px 60px;
 	}
-
 	.shop-title {
 		font-size: 18px;
 	}
-
-	.shop-card {
+	.good-card {
 		width: calc(50% - 11px);
 	}
-
-	.shop-card-title {
+	.good-card-title {
 		font-size: 17px;
 	}
-
-	/* ------ подвал ------- */
+	/* ------ Подвал ------- */
 	.footer {
 		margin-top: 55px;
 	}
-	
 	.socials {
 		margin-bottom: 45px;
 	}
 }
 
-@media (max-width: 640px), (max-width: 767px) and (orientation: landscape) {
-	/* ------ popup -------- */
+@media (max-width: 640px),
+(max-width: 767px) and (orientation: landscape) {
+	/* ------ Попап -------- */
 	.popup-container {
 		min-width: 300px;
 		max-width: 330px;
 	}
-
 	.popup-feedback {
 		padding: 25px 25px;
 	}
-
 	.popup-title {
 		font-size: 16px;
 	}
-	
 	.popup-close-button {
 		width: 30px;
 		height: 30px;
 		margin-bottom: 6px;
 	}
-
 	.popup-form-row {
 		margin-bottom: 30px;
-  	}
-
+	}
 	.popup-radio-group-text::before {
 		width: 25px;
 		height: 25px;
 		vertical-align: middle;
 	}
-	
 	.popup-radio-group:nth-of-type(n+2) {
 		margin-left: 35px;
 	}
-
-	/* ------- шапка -------- */
+	/* ------- Шапка -------- */
 	.header {
 		padding-top: 30px;
 		padding-bottom: 210px;
-
 		background-image: url("../images/banner-mobile.jpg");
 	}
-	
 	.container {
 		max-width: 640px;
 		padding: 0 15px;
 	}
-	
 	.header-container {
 		justify-content: flex-end;
 	}
-
 	.logo {
 		display: none;
 	}
-	
 	.menu {
 		display: none;
 	}
-		
 	.menu-burger {
 		width: 23px;
 		height: 20px;
 		border: none;
-
 		background-image: url("");
 		background-color: transparent;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-	    color: #ffffff;
 		cursor: pointer;
 	}
-	
 	.logo-image-mobile {
 		display: block;
 		margin: 175px auto 0;
 		width: 270px;
 		min-width: 270px;
 	}
-	
 	.logo-mobile {
 		display: block;
-
 		text-align: center;
 	}
-	
 	.title {
 		max-width: 300px;
 		margin: 35px auto 0;
-
 		font-size: 26px;
 		line-height: 1.4;
 	}
-		
-	/* ------- тренды -------- */
+	/* ------- Тренды -------- */
 	.trends-title {
 		margin: 40px 0 25px;
-	
 		font-size: 16px;
 	}
-
 	.trends-title::after {
 		margin: 6px auto 0;
 	}
-
 	.trend-post {
 		min-height: 230px;
 		width: calc(50% - 3px);
 		padding: 15px;
 	}
-		
-	.trend-post:nth-child(n + 3) {
+	.trend-post:nth-child(n+3) {
 		margin-top: 4px;
 	}
-		
 	.trend-post-content {
 		padding: 28px 20px;
 	}
-			
 	.trend-post-title {
 		font-size: 16px;
 		line-height: 1.25;
 	}
-	
-	/* ------- основной контент -------- */
+	/* ------- Контент -------- */
 	.page {
 		max-width: 640px;
 		padding: 42px 15px 0;
 		flex-wrap: wrap;
 	}
-
 	.content {
 		width: 100%;
 	}
-
 	.content-post {
 		flex-wrap: wrap;
 		margin-bottom: 35px;
-	
 		border-bottom: 3px solid #eeeeee;
 	}
-	
 	.content-post-image {
 		min-width: 0%;
 		width: 100%;
 		margin-bottom: 12px;
 	}
-
 	.content-post-info {
 		width: 100%;
 		margin-left: 0;
 	}
-
 	.content-post-title {
 		margin: 8px 0 17px;
-
 		font-size: 16px;
 		line-height: 1.25;
 	}
-
 	.content-post-footnote {
 		margin-bottom: 15px;
 	}
-
 	.content-post-text {
 		margin-bottom: 5px;
-
 		font-size: 14px;
 	}
-
 	.content-post-text:last-child {
 		margin-bottom: 20px;
 	}
-	
-	/*-------боковая колонка страницы------*/
+	/*-------aside------*/
 	.sidebar {
 		width: 100%;
 		flex-shrink: 1;
 	}
-	
 	.sidebar-title {
 		margin-bottom: 25px;
-	
 		font-size: 16px;
 	}
-
 	.sidebar-section {
 		margin-bottom: 35px;
 	}
-
 	.sidebar-section:first-child {
 		margin-bottom: 60px;
 	}
-
 	.sidebar-element-info {
 		margin-left: 20px;
 	}
-
 	.sidebar-tag:last-child {
 		margin-right: 0;
 	}
-	
-	/* -------- магазин ------- */
+	/* -------- Магазин ------- */
 	.page-footnote {
 		max-width: 640px;
 		padding: 40px 15px 50px;
 	}
-
 	.shop-title {
 		font-size: 16px;
 	}
-
-	.shop-card {
+	.good-card {
 		width: 100%;
 		margin-top: 27px;
 	}
-
-	.shop-card-image {
+	.good-card-image {
 		margin-bottom: -38px;
 	}
-
-	.shop-card-title {
+	.good-card-title {
 		font-size: 17px;
 	}
-	
-	/* ------ подвал ------- */
+	/* ------ Подвал ------- */
 	.footer {
 		margin-top: 45px;
 	}
-	
 	.socials {
 		margin-bottom: 45px;
 	}
@@ -1365,8 +1257,6 @@ select, textarea, input {
 		min-height: 230px;
 		width: 100%;
 	}
-	
-	.trend-post:nth-child(n + 2) {
+	.trend-post:nth-child(n+2) {
 		margin-top: 4px;
 	}
-}
