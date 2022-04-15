@@ -688,7 +688,7 @@ input {
 	color: #0f0d0e;
 }
 
-.sidebar-categories {
+.sidebar-  {
 	list-style-type: none;
 	padding-left: 0;
 	margin-top: 0;
@@ -703,7 +703,7 @@ input {
 }
 
 .categorie-link,
-.good-card-link {
+.shop-card-link {
 	color: #000000;
 }
 
@@ -749,50 +749,50 @@ input {
 	opacity: 0.4;
 }
 
-.good-cards {
+.shop-cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.good-card {
+.shop-card {
 	width: calc(100%/3 - 44px);
 	margin-top: 22px;
 	display: flex;
 	flex-direction: column;
 }
 
-.good-card-image {
+.shop-card-image {
 	width: 100%;
 	padding: 0 20px;
 	margin-bottom: -35px;
 }
 
-.good-card-info {
+.shop-card-info {
 	padding: 45px 20px 25px 20px;
 	flex-grow: 1;
 	border: 3px solid rgba(181, 159, 91, .6);
 }
 
-.good-card-title {
+.shop-card-title {
 	color: #0f0d0e;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.good-card-text {
+.shop-card-text {
 	margin-top: 5px;
 	font-size: 15px;
 	line-height: 1.46;
 	font-weight: 400;
 }
 
-.good-card-link {
+.shop-card-link {
 	color: #b59f5b;
 }
 
-.good-card-link:hover {
+.shop-card-link:hover {
 	text-decoration: underline;
 }
 
@@ -816,12 +816,12 @@ input {
 	text-transform: uppercase;
 }
 
-.price-no {
+.no-price {
 	font-size: 14px;
 	text-decoration: line-through;
 }
 
-.price-yes {
+.price {
 	font-size: 20px;
 }
 
@@ -1053,10 +1053,10 @@ input {
 	.shop-title {
 		font-size: 18px;
 	}
-	.good-card {
+	.shop-card {
 		width: calc(50% - 11px);
 	}
-	.good-card-title {
+	.shop-card-title {
 		font-size: 17px;
 	}
 	/* ------ Подвал ------- */
@@ -1233,14 +1233,14 @@ input {
 	.shop-title {
 		font-size: 16px;
 	}
-	.good-card {
+	.shop-card {
 		width: 100%;
 		margin-top: 27px;
 	}
-	.good-card-image {
+	.shop-card-image {
 		margin-bottom: -38px;
 	}
-	.good-card-title {
+	.shop-card-title {
 		font-size: 17px;
 	}
 	/* ------ Подвал ------- */
