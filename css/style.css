@@ -75,9 +75,9 @@ input {
 	background-color: rgba(0, 0, 0, .6);
 }
 
-/* .popup-active {
+.popup-active {
 	display: flex;
-} */
+}
 
 .popup-container {
 	margin: auto;
