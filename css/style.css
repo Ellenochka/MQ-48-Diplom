@@ -297,7 +297,48 @@ input {
 	text-transform: uppercase;
 	text-align: center;
 }
+/* ----------- Бургер меню----------- */
+.burger-menu{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 
+.burger-menu-hint{
+	display: inline;
+	width: 23px;
+	height: 3px;
+	margin: 10px auto 0;
+	border: 3px solid #ffffff;
+	opacity: 0.4;
+}
+
+.burger-menu-hint::after{
+	content: "";
+	display: inline;
+	width: 23px;
+	height: 3px;
+	margin: 10px auto 0;
+	background-color: #ffffff;
+	opacity: 0.4;
+}
+
+.burger-menu-hint::before{
+	content: "";
+	display: inline;
+	width: 23px;
+	height: 3px;
+	margin: 10px auto 0;
+	background-color: #ffffff;
+	opacity: 0.4;
+}
 
 /* ----------- Тренды ----------- */
 
@@ -575,8 +616,7 @@ input {
 
 .search-hint,
 .subscribe-hint,
-.popup-close-hint,
-.menu-burger-hint {
+.popup-close-hint {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -977,7 +1017,7 @@ input {
 	.menu {
 		display: none;
 	}
-	.menu-burger {
+	.burger-menu {
 		width: 23px;
 		height: 20px;
 		border: none;
@@ -1116,7 +1156,7 @@ input {
 	.menu {
 		display: none;
 	}
-	.menu-burger {
+	.burger-menu {
 		width: 23px;
 		height: 20px;
 		border: none;
@@ -1260,3 +1300,4 @@ input {
 	.trend-post:nth-child(n+2) {
 		margin-top: 4px;
 	}
+}
